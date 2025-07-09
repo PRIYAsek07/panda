@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form</title>
+</head>
+<style>
+
+
+        body {
+  background-image: url("./img/priya/image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  animation:cardPulse 3s infinite ease-in-out;
+} 
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.card1 h1 {
+  background-color: rgb(139, 187, 85);
+  padding: 10px;
+  border-radius: 8px;
+  animation: slideDown 1s ease-out;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+form {
+  background-color: rgba(95, 148, 141, 0.096);
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  animation: zoomIn 0.5s ease-in-out;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px 0;
+  border: none;
+  border-bottom: 2px solid #8b9fbb;
+  background: transparent;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,       
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus {
+  border-bottom: 2px solid #afb151;
+  outline: none;
+}
+
+input[type="submit"] {
+  background-color: #ff7f50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff4500;
+}
+
+     
+
+        
+</style>
+
+<div class="card1">
+   <center> <h1 style="background-color: burlywood;">Register Form
+ 
+    </h1></center>
+</div>
+<body>
+
+    <form>
+        <table>
+            
+            <tr>
+                <td>
+                    Name:
+                </td>
+                <td>
+                    <input type="text" placeholder="Name" name="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Password:
+                
+                </td>
+                <td>
+                    <input type="password" placeholder="Password" name="">
+                </td>
+            </tr>
+            <tr>
+            <td>
+                Gender :
+            </td>
+            <td>
+                <input type ="radio" name "Gender">Male
+                <input type ="radio" name "Gender">Female
+            </td></tr>
+            <tr>
+                <td>
+                    Email :
+                </td>
+                <td>
+                    <input type ="mail" placeholder="Email" name="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Phone no:
+
+                </td>
+                <td>
+                    <select>
+                        <option>+91<option>
+                        <option>+92</option>
+                       
+                    </select>
+                    <input type ="Phone" placeholder=" 98480*****" name ="">
+
+                </td>
+            </tr>
+            
+            <td>
+                <input type = "Submit" value="Submit" name="">
+            </td>
+        </table>
+    </form>
+    <a
+    <
+    
+</body>
+</html>
