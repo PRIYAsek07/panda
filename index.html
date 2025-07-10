@@ -2,15 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panda</title>
-</head>
-><style>
-     
-
-
+    <style>
         body {
-            background-image: url("./img/priya/image.png");
+            background-image: url("photo.png");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -44,6 +40,7 @@
             height: 300px;
             width: 300px;
             margin: 10px;
+            transition: transform 0.3s ease;
         }
 
         .container {
@@ -58,42 +55,49 @@
             max-width: 600px;
             margin: auto;
         } 
+
         .p {
             font-family: Arial, Helvetica, sans-serif;
             font-style: italic;
             font-weight: bold;
         }
     </style>
-
-
+</head>
 <body>
-   
-</html>
+
+    <!-- 🎵 Background music player (loop, autoplay) -->
+    <audio autoplay loop>
+        <source src="panda-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
     <div class="card1">
         <h1>PANDA 🐼</h1>
-       
     </div>
 
     <h2 style="color:blueviolet; text-align:center;">PANDA</h2>
-    <p style="text-align:center;">Giant Panda - Xing Qiu and Yi Lan - Adelaide ZooThe term "panda" most commonly refers to the giant panda, a large, black and white bear native to China. They are known for their distinctive black and white fur, and their dependence on bamboo for food. However, "panda" can also refer to the red panda, a smaller, reddish-brown mammal found in the Eastern Himalayas. </p>
+    <p style="text-align:center;">
+        Giant Panda - Xing Qiu and Yi Lan - Adelaide Zoo<br>
+        The term "panda" most commonly refers to the giant panda, a large, black and white bear native to China.
+        They are known for their distinctive black and white fur, and their dependence on bamboo for food.
+        However, "panda" can also refer to the red panda, a smaller, reddish-brown mammal found in the Eastern Himalayas.
+    </p>
 
     <div style="text-align:center;">
-        <img src="image.png" alt="">
-        <img src="panda.p.jpg" alt="">
+        <img src="image.png" alt="Panda 1">
+        <img src="panda.p.jpg" alt="Panda 2">
     </div>
 
     <div class="click">
-    <a href="C:\Users\ADMIN\Desktop\kavipriya\my-album.html"><button>Show Images</button></a>
-    
-
-        
-       
+        <a href="C:\Users\ADMIN\Desktop\kavipriya\my-album.html">
+            <button>Show Images</button>
+        </a>
     </div>
-
 
     <div class="container">
         <h1>Top 5 Facts About Pandas - WWF</h1>
     </div>
+
     <ul>
         <li>They have a pseudo thumb for grasping bamboo</li>
         <li>Pandas mainly eat bamboo</li>
@@ -108,13 +112,51 @@
     </nav>
 
     <div style="text-align:center; margin-top:30px;">
+        <!-- Google Maps embed -->
         <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
         <br><br>
+        <!-- YouTube Video embed -->
         <iframe width="560" height="315" src="https://www.youtube.com/embed/Xt9xzgDL62Y" title="Panda Video" frameborder="0" allowfullscreen></iframe>
     </div>
-</body>
-</html>
 
-    
+    <script>
+        // 🐼 Page load aachu nu sollra alert
+        window.onload = function () {
+            alert("Welcome to Panda World 🐼!");
+        };
+
+        // 🐼 Show Images button click panna alert varum
+        document.querySelector("button").addEventListener("click", function () {
+            alert("Redirecting to your panda album 📸");
+        });
+
+        // 🐼 Toggle Panda Facts button create panrom
+        const toggleButton = document.createElement("button");
+        toggleButton.textContent = "Toggle Panda Facts";
+        toggleButton.style.display = "block";
+        toggleButton.style.margin = "20px auto";
+        document.body.insertBefore(toggleButton, document.querySelector("ul"));
+
+        const factList = document.querySelector("ul");
+
+        toggleButton.addEventListener("click", function () {
+            if (factList.style.display === "none") {
+                factList.style.display = "block";
+            } else {
+                factList.style.display = "none";
+            }
+        });
+
+        // 🐼 Image hover animation (zoom effect)
+        const images = document.querySelectorAll("img");
+        images.forEach(img => {
+            img.addEventListener("mouseover", () => {
+                img.style.transform = "scale(1.1)";
+            });
+            img.addEventListener("mouseout", () => {
+                img.style.transform = "scale(1)";
+            });
+        });
+    </script>
 </body>
 </html>
